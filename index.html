@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chic Lighting</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <style>
+       
+
+.gallery
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .gallery img
+        {
+            width: 33%;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+h1,h2,h3,h4,h5{
+    color: goldenrod !important;
+    text-align: center !important;
+}
+.btn{
+
+justify-content: center;
+display: flex;
+
+}
+
+
+.card{
+  height: 450px;
+  background-color:rgba(134, 134, 134, 0.295);
+  color: #000;
+  align-items: center;
+}
+  img{
+    height: 280px;;
+  }
+  .rounded-pill{
+    height: 30px;
+    width: 30px;
+  }
+  footer{
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body style="background-color: rgb(17, 18, 19);" >
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators container">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2017/8/15/0/IO_Daniel-Contelmo_Gothic-Cottage_11.jpg.rend.hgtvcom.616.411.suffix/1502809929431.jpeg" alt="Recepie Mix" class="d-block" style="width:100%; height: 650px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.lightatelier.com.sg/wp-content/uploads/2020/04/Purisima-Modern-Chic-Circular-Curved-Lines-Pendant-Light-Dining-Room-lights.jpg" alt="organic" class="d-block" style="width:100%; height: 650px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/614MgfyaxEL.jpg" alt="saues" class="d-block" style="width:100%; height: 650px;">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+
+              <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top " >
+            <div class="container-fluid">
+
+                
+                
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAABR1BMVEUaGhr///8dHR0ZGRkAAAAcGhnztysaGhgaGhwZGxoaGxj/vhoAAAcbGRZHOB5COB0TEhOFaSj/vAnJnCoSDxPPpDzvtjU/NB2RcCQACREICAgQEBD39/eQkJAmJibt7e0AABrW1tZycnJjY2OioqLi4uI9PT3MzMx9fX0wMDDapiSamppnSwwWDhQAABUVGCRZWVm0tLQbGR8AAB5OTk7Dw8NoaGh2dnaJiYk0NDT/wicdGBweEgyfgC3ElyuwsLAmHxZ+ZzfvvkxuWioLEyZfSxt4YSGdeB8MFiiugBkxHwCAWgY3JwC2ji7otToeFgB1VhIOGB8ZFCJ4WiEzKQ+tjitMPBOAYibuvDBcRBaohTEAEBJSQyQwJxgqGQ62lT6Ve0H7wTNlUSt5aEGoikEaCgrdrDouIRj7wkNFMwnAokpXShloWDD7maDEAAAQlUlEQVR4nO2d/V/ayPbHk8yETCahDTGwkvAgIqJVgqRqNVK1WvV+e1f8Wq3requWe63b7t7//+d7JgkQfFjq6qvVZT77WkrmIZg358w5M3lAELi4uLi4uLi4uLi4uLi4uLi4uLi4/qoURRWSJJmkyQFSqIKSSVkZ1I6JqLA/+Ucf2vcQWRHWf/omrXvf2DBsTciPPrTvIsV5s5FpZQaqtfl2a2Nws0gbbxzlRx/Zd5HqpDRT08xB8rffzkKrwQ1hZ7DDlPOjD+y7CMlGStN2Rgfr2T9mNe3/vqHh6OiOpqWMH31k30WE4Us807MDZdRnfX/WHdww6z5LAL7hcF7ZYfgoUgZIpYBPm60nB7QTVIEOEb5kYH1UQIMaovqs5s/WB+6QyMpzwDckoUO2GL4kGM2fS43wDc5HCB1CfIOkqiG+gVaqkuTz4XHeu+IbZKUc343i+G4Ux3cvcXz3Esd3L/HIey/dhk8OEzwkIwkJChUU8pZN2uoeURVFRgKrpqoqXMsDOT6mFUAGKTBIUYhn6Tp+909N++c7rOtZRjCJiKdQonB8tzgvm7/CXJh4+/jn7d106zhhmv6XVnp3+2dsEVWVgeKKTK924/iYiAcgwALr7t52+liLFvJ89kY7Tm/vZT0ky0nZ49Z3Iz6PUiITYu2NtjRT81vpndH/B42ejLTamum3RveyhNBrtsfxhVIpIaqnbzN4rZ2tpuPW9733b+tZq7n1uuVD4S+W6qnXAXJ8TJR4nvVu1Tf9y+2m/p7IiMqyrMB/K57ePBjxzfbuzxbhkfeWsU+WslstTWtt196HTorA1gSKVjxVJdbnA1a3lb1+Qm3Y8SmCAkmfQt3NY7CwQwtKVIEqAoIXj5GEmEGQdfihbR5vuip4OVT0EpjhxkdUGRyXUCm7mdEyKf225VGq6qlj8/jABXxIFTi+UERZSUKqTLNbGTNzYN26iK+ABx8cmxnwX6rCENgNIUOOjzJ8nnfUMjOz2f1b+1FKEUN8fAQODb7bpTXs+AAg9T6PmIlfHPBIdIv5wWyECtZ2wrxsevBe5dYXiMiUyqr+2vd3LCCh3rpABUYnEHtU017rQpL02g03PnUFhjLv6NhMn4EZesqtFKCGKF5zhLkvoh4PHYEUD7xXX9WOf/VUT/iz66SgjqLa0bG26npJ0r0ebbjxyYTKxlZCO3FJcoVeX4/qiqiQBsrJ7InW3vKSsBGVDzk+FRLmD1BEFJihDe7vPTvWdl1Z4NYXiChJ6RSIWEJw/IMvKrB2tcyhivjYF4gQ2U35/pYVDHvfcI2oteX7qX+tdLeHG59CyNiI2VonYb43GJ+3/kIbcb3u9pDjU8hn8N1b57pXpQj6iZZp8llHKJjBfmxrKetb+ytKLeUnPlIeOsJtYmz6/h/WN18YLxtHvr/Zm9sNNT5F8cZea+1Tj3TlwfvYZqwiKj9NaK/HujscanzgvGOQiZzVrBrICl5rteifjiymqBzenGW03TE+5w1EVMCnvbiTNHPX5XlfIKq65z67fSO4PcPsnOCNqXv7RrfK9M85vlDII193R3pKmIkXI9elmYnY1ocjnveFSiJad8dejo3B/zoec3e0xLtgI9LLl+z9WcbfcV9i/SVozB1zEeFLBoGIsK5SwaOGq3998+nsHweQldQ9iuRuPRXIPpRuvz379OkZHksSr67AS2cHQ46PJSOue/rmQ8vX2p+s05a5qksolq9Qhei7ZuvU+tTW/Mzu5qk7RqWV7qR3uPEJ1G3+++SF77MrWy6P9rO7ZuIIed0rqRQAXDs6hlhrfbxkVwxp7Rcn/266PHEJRH5LJ3yA4idWf3mm61b9KGOmsarIYIBIUsBzFWpfmpkjL6vrz1KrxwHndnq9s4OhxqcY/2mb/vHI6JHrOu7hxRs7O+pru5+9uqyyiyUFGe1jSAxfZ+3ti0P3vVs7So0kwM3fdG6hHGp8At07v9g8G6tR8t5+ndFaz73Pq5qWbmYphI8VotLsWbDtPd/QMq8/79dVyz3bfH2x3tnBkOPb13WVeJTqmy3f9E+axGumNS2TOnPHslnX3UtlTEbPS56wq68O9OQKeLWFSeeM8HDjkwn1KOQhKx+ATnrLTX5M7jd326aWGNlJpXZGMprZPm96xsem/msampxb7CI/T+ChI5CnQALsEXq44bdSjrWX/nLhevrBZZtFCBZpweIc4l58Se/VP6dafusn2fNo7Ar74caneABQJUp289Ppv/bPRjT/IuvWvebmyYtE20+8ON9svs+6+gWMf+/23dNPmxahRCAqxxcVsEUrxVMNR/XOYNTbdc5OUhZR7eZvh6e/JS2quqmTsxpE3/SZRxxDDm2P4+tJUciKLHssxp43ayd+67C+bnte1vU8Y30f/Prkvf3B19J7BJEVQqmqKHzS1ieiqmB7/m5z/yihpfHWxrlubW7q+Ly1hdNa5miluesH9iejleDmmU5Hji+QF9Lzaqswa3M/mBv465cvR3hDO9H/ODZXa95n5r+nhE1IKLtaLRLHx4RCekL9oA3Aapdm2p3VtFk3bV4a+onWPtj3OvYHyaKywvH1aR3onTeJsn5ptg73v7a10TF2S+DYqJb4uv+uZV6uyySwv3VFBdeVufPGlf2lrYHnevSnjfao/nbUb//6lt2Q+vYPAPnWHW1vnFKv/nnXb7+xVQXyFh55e4Lp17PfL5oqWaHGZspQ9VWzhYPH4LzHLXNXl5zUpsECRvPi92c1IhOVXx7ZE9BDxKkRKgtItRxVSTJm4VOE2ErpepJaBuQrbOHUJoTdxyDwsa9fChGCK3NVqta32lqq7kHk/erVU1r71zqSVDV45BKbcFCWKPKx7+Z6cFF3VGsf1Ym+uZn16l+PtR33Ty5c4/jiolRQrRHzUicK2c+CReJLcxX8+YZbUUNxfHERgtTTjHmiK8mkSpNJqp+YmUNCbn0kBMfXp6RibX3xDxyWm8AEV31/4Lf/sG5/ZBjHFxdbOj39/XyPQAyhkJ8o3t75+alHufUF+obnuKAk1mUwPkjvIN5SVMOycPsdCxxfn4gCeR1JUkih4R+wQVlV2ZL+be05vrgUCBIQKGRFZjeesrVUWYWkmuML9a0PYfpmcXz3Esd3L3F89xLHdy9xfPcSx3cvDRc+yp4a/vz2BZQ7CwlD9dhr9sz655Q9oOqBlKTDY31K8IsJP2P9AYXfDQ8+hf3cyWX6QXWpDQ0+wUj5g38B5q7yU7Wh+KknJWn8Nz2yesN9Q/dS+r+1H31k30WqSgzbsi3LuaYbir6hkeXYlgM7JMPhvJSSJLvGgj6YBJmyB2ENBT52AkMAfA+3R9lbScJ3Mhw/08bFxfWoha5vopsKB/S7++eh+NuoICj7q3v+/kJ/+teizjFK0FC60g62kdTr3YcchRzCom5PJHQfOImEXn3UG8GnxFs+fiHbsR2p/49F2La7P4LIICAbg+w+PI5tO2G9YHeaIwlKY0IhE2iAuw9ycYLGYQ0rj32sZNzwOY9bzqt8fs6+UriUz0/G+OHl/EKp1JiZxL3jcuby+Vfh73Qa0Hw+rLAX8zEtFSIbY/uLmNhleO+EJrkcNul9zvzMQqnaWFrG18eORyq7IoozuL9sWhTFRSdyMVA+J4ZqSF0jwhOiWAr7FYqiOBWSxAtiTLnJEEIB+r9CYVe8JoqVZYNtGHNBk0hQ34j6FWeMpwEP8JWu4ZPY4Za7vwArxZBUpjtm0cUH41XldnxBa8Z3HPX6iaVgiIvjg91OV3o9F2AQfBIaiA8zmyhOjI/PsMMr4YjfLfim1tbWJqqsA3tTiKzvKj6xwXr2Wx/7Q8TKzOKrNWgtTlxxiMeqQficcWYMEsYGxjMiwxCWx5w3hk9gQz9eAg7BG3QbPjEPw1uf9QXlMxA3bCxVWfnTcN9B+Fh9BQc5CrhmaWoZxZ2XjYxIiOELqvLQJe59N+ATX9lx6wNPhs9cwGEWZJcWxgt/B3xImIT3UzakfAUQwkbBCLkwDFVpOlAfPhTik2I54lV8FdjOzRl91rcISJcFyWAfUzCwVLjtceSPSwOsz5mHQ5xnI2AxVCVKcgIrCiMye70TvoVyEIV6+BByoE8RSwiXos9ZsJ9E5jwAn70YHmIvpNr9ThjpTviqeIpFobjzOjPBGCHhTo5UupqLPk4NwGeA9YnzMXy5TowADLnIUnJ3xWcHUWhhvmt9ArO+HEYSLnbwPY3Q24cvPMS+0MHGPhYmYZgrFCAKg/N2E5cqDnXXsa+KpeDraPSsD80FXxNCBRhL7UaU2jx+9VtfEBb68GGWxAVhUJIYp05CFiUubM1Aujs+8NJSN7MOBjlmdiUWeSX4puDzx7uTxkcthi8fWZEdBtU+fIFZVJZZPhYk0J05aoSPQfor+MBdKz18USdxwcCOjQtQU3kagTfM66qhpqI0OIYPRTGims+vsVE9b/dN2oKlmr+CD9qxYaGXuEjMzMVcI58PRtm5p2F84Vwp0gTuTfHLnciH2CQ/1iJSlDazBgPwoVvw2XMxfB1+kcafxsgXrrj04ITHXBDZikvUQBJwOWqTW8RdKJH1sWmZxFZcurShCsJqsTfpQMHXEeIDSGvdMQ6z+WB3zstmK1HWUprHT8N1BcmZL5fnQpU7a3LGXLkcz/oNPD/TaMwsYqM3FTMmy+X5cF3JgebTnXLUqep9BoTV8hxEnwB9UOkEIUfA8+W52GIzTKwXZxpreYAnXV3XfqS6tv7OJHVX07slbBmYBcV4G6mzyo+EHlYULuBf2S8KGoRpUXhyIGgQX+UOK1kAu/LZj1yoq3jZlTbhi9TZQt3CTjWKv+10757uiJ/piPe7SunKfv8eis7ooDijWG0ASbp26qevZYf4E8lHHlpXTqKFdnP9hATqmg/qJ456tcOnMKtmcTMMsAZmK32CHUZeVghRBUohjLCGLGgj9hrUBF0FO1w9RdEy6jAJTbHzZpCb4CVIBwFiubFWxoKxOMXOJzlT4zZagmg6OWMYc9BwZp6dsM3PGc74KyfsW3DK8Ap9ULCn4cInLVTEXAUm8ZNika2KTIilkjjh4EYFEjiYvUIaXMxNo1ciW8+vVIqvDJi3inkHV6GmkqtUKtMw4atUILl2xGKlsoCeyImgh5Hh4NICdhBulGAqj+bFJYynJgyGj2XJUIcqYgUH+IrMecH6pnPQaKEKNRPMW6ErbFYwhgkFBk8fKvuT7BI7D4HF8loJO1OiUAYbmmf4hAhfcSJXXRRtmK9VisVpBNYXLAQysLlisYpxI9dowLTGga3czNNYCn042ZUFLNh5caEkzjvj4vJkfkIM8Dl2hG9mXqwy68tNTU0x25rONaamKsz6qq+mFm28lquKM45gi2tTS3POU7mI4EGEQny4WFprFBewUamUy6WqYTcqi+OLBTb2gfXhRTHAVx4fn0RsnpvHbOxDlYXy+KLEUJdgrmuLM4vj5esXG/29ZVcbGC3mlmHMKxaMyWouV11GeAIcsTJpLzSwUZrBMON38BJzziVHkAqVJRs3oFeVefE0ngAHhujjMJcuPZUp7UPJKMCUvzANU320DI6HJydZEscW1qcNBHVouiAge9qQglOXbFprwCvrZXQasQFx0kFs64mcw31ASdGUF0XX86FeeU/MJaX4SlW/buzDxcXFxcXFxcXFxcXFxcXFxcU1vJK47qH/AT3ugVWVceTLAAAAAElFTkSuQmCC"  class="rounded-pill" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto  ">
+                    <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="#4">Product</a>
+                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="#3">About US</a>
+                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="#1">Contact</a>
+                       </li>
+                </ul>   
+              </div>
+            </div>
+          </nav>
+
+          
+         
+            <hr>
+            <!---------PRODUCTS-->
+            <h1 id="4">Products</h1>
+            <hr>
+            <main class="row .container-fluid ml-5 mr-5 " >
+  <div class="col  ">
+        <h2>Chandelier</h2>
+            <div class="card mt-5">
+                <img src="https://img.freepik.com/free-photo/luxury-modern-living-room-illuminated-by-lantern-generated-by-ai_188544-21373.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=sph" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title"> Chandelier BLH-TL 248</h5>
+                    <p class="card-text">Dimension :
+                        Width :  5.5 inch
+                       Length : 6.5 inch</p>
+                       <h4>Rs 5000</h4>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2017/8/15/0/IO_Daniel-Contelmo_Gothic-Cottage_11.jpg.rend.hgtvcom.616.411.suffix/1502809929431.jpeg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title"> Chandelier BLH-TL 247</h5>
+                    <p class="card-text">Dimension :
+                        Width :  7.5 inch
+                       Length : 6.5 inch</p>
+                    <h4>RS 10,700.00</h4>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <img src="https://img.freepik.com/free-photo/close-up-chandelier-ceiling-with-traditional-oriental-style-with-many-details_169016-10678.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=sph" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title"> Chandelier BLH-WL-43</h5>
+                    <p class="card-text">Dimension :
+                        Width :  7.5 inch
+                       Length : 9.5 inch</p>
+                        <h4>Rs 2,500.00
+
+                        </h4>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <img src="https://img.freepik.com/free-photo/illuminated-altar-exudes-elegant-spirituality-history-generated-by-ai_188544-10693.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=sph" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">Chandelier BLH-TL 246</h5>
+                    <p class="card-text">Dimension :
+                        Width :  11.4 inch
+                       Length : 7.6 inch</p>
+                        <h4>Rs 2,400.00
+
+                        </h4>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+            </div>
+            <div class="col ">
+    <h2>Side Lamp</h2>
+        <div class="card mt-5">
+            <img src="https://img.freepik.com/premium-photo/lamp-table-with-picture-frame-wall-it_865967-313374.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+                <h5 class="card-title">Side Table Lamp BLH-CL-015</h5>
+                <p class="card-text">Dimension :
+                    Width :  8.3 inch
+                   Length : 6.9 inch</p>
+                   <h4>Rs 55000</h4>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <img src="https://img.freepik.com/free-photo/lamp-table-with-vase-vase-it_1340-23630.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+                <h5 class="card-title">Side Table Lamp BLH-CL-018
+                  </h5>
+                <p class="card-text">Dimension :
+                    Width :  7.5 inch
+                   Length : 6.5 inch</p>
+                <h4>  ₨92,700.00</h4>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <img src="https://img.freepik.com/free-photo/luxury-modern-room-with-elegant-decoration-lighting-generated-by-ai_188544-21356.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+                <h5 class="card-title">Side Table Lamp BLH-CL-017
+                  </h5>
+                <p class="card-text">Dimension :
+                    Width :  7.5 inch
+                   Length : 6.5 inch</p>
+                    <h4>  ₨18,000.00</h4>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <img src="https://t4.ftcdn.net/jpg/06/53/71/17/240_F_653711702_b8GyLF8864oSzozlMsnc9bytskQnk4Mc.jpg" class="card-img-top" alt="Product 4">
+            <div class="card-body">
+                <h5 class="card-title">Side Table Lamp BLH-CL-016</h5>
+                <p class="card-text">Dimension :
+                    Width :  7.5 inch
+                   Length : 6.5 inch</p>
+                    <h4> ₨124,100.00                 </h4>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+</div>
+
+            </main>
+            <!------PRODUCT END-->
+<!-- Gallery Section -->
+    <h1>SOME BEST ITEM </h1>
+    <div class="gallery ">
+        <img src="https://img.freepik.com/free-photo/free-photo-background-eid-mubarak-ramadan-kareem-season-festival-with-moroccan-lamp-quran_1340-24104.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais">
+        <img src="https://img.freepik.com/premium-photo/lamp-couch-living-room-with-lamp-wall_865967-265020.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais">
+        <img src="https://img.freepik.com/free-photo/wall-lamp_1088-325.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais">
+        <img src="https://img.freepik.com/free-photo/lamp_1203-7284.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais">
+        <img src="https://img.freepik.com/free-photo/comfortable-pillow-bed_74190-6904.jpg?t=st=1700992780~exp=1700993380~hmac=d57286c340cc2cd7fa83302a45ad88c26b2e6018fd2969204a41310f5211c522">
+        <img src="https://img.freepik.com/premium-photo/lampe-sur-la-table-de-chevet-lampe-de-chevet-lumire-chaude-lire-un-livre-au-lit-sous-une-lampe_167368-1124.jpg?size=626&ext=jpg&uid=R125416098&ga=GA1.1.2111672628.1700045660&semt=ais">
+    </div>
+    <!---------Gallery section end-->
+<hr>
+<hr>
+<hr>
+
+    <!-- About Us Section -->
+<div id="3" class="container about-section "  >
+    <h1>About Us</h1>
+    <h2>About Chic Lighting</h2>
+<p class="text-white">
+        At Chic Lighting, we believe that lighting is not just a functional necessity, but an essential element 
+        of interior design. Our passion for lighting design and our commitment to quality craftsmanship are the
+         driving forces behind our business. We strive to create lighting products that are both aesthetically 
+         pleasing and functional, and that can transform any space into a warm and inviting environment. Our core
+          values include creativity, innovation, and sustainability. We believe that by using eco-friendly materials and energy-efficient lighting solutions, we can help reduce our carbon footprint and contribute to a more sustainable future. Our unique lighting products are designed to cater to a wide range of tastes and preferences, from classic to contemporary. We take pride in our ability to offer customized lighting solutions that are tailored to meet the specific needs of our clients. At Chic Lighting, we are committed to providing our customers with the highest level of service and support. We believe that great lighting has the power to transform any space into a beautiful and functional environment, 
+        and we are dedicated to helping our clients achieve their lighting goals.</p>
+</div>
+<!------about code end-->
+<hr>
+<hr>
+<hr>
+
+<!----contact---->
+
+            <div  id="1"  class="container  bg-dark text-white " >
+                <img src="data:image/png;base64,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" style="height: 50px;width: 50px;" class="rounded-pill mt-3 ">
+                <div class="row">
+                  
+                    <div class="col-md-6">
+                        <h3>Contact Us</h3>
+                        <strong>Address</strong>    
+                        <p>123 Main Street, City, Country</p>
+                        <strong>Email:</strong><p>example@example.com</p> 
+                        <strong>Phone:</strong><p>(123) 456-7890</p> 
+                        <strong>facebook</strong><p>Chicligth</p>
+                    </div>
+                    <div class="col mb-5">
+                        <h3>Find Us on Google Maps</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7182582933524!2d67.12479497425221!3d25.009687739272156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb347f6c8a122f5%3A0xdb84d3a04e35cb9c!2sAptech%20Gulshan%20e%20Maymar%20Center!5e0!3m2!1sen!2s!4v1701101185373!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+    <!-------contact end -->
+
+    <!-------fooder-->
+    <footer class="mt-2">
+      <p>©all rights reserved by Younas Khan</p>
+
+    </footer>
+    <!----------fooder end -->
+
+
+
+
+
+</body>
+</html>
